@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Desain Tabel & Formulir CSS</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #0f172a;
+            text-align: center;
+        }
+      
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            margin: 10px auto
+        }
+
+        th, td {
+            border: 1px solid #cbd5e1;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #2563eb;
+            color: white;
+            text-align: center;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            width: 300px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #94a3b8;
+            border-radius: 4px;
+            font-family: inherit;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #16a34a; 
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer; 
+            width: 100%;
+        }
+      
+        textarea {
+          max-height: 300px;
+        }
+
+        button:hover {
+          transform: scale(0.9);
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Daftar Ekstrakurikuler IT</h2>
+    <table>
+        <tr>
+            <th>No</th>
+            <th>Nama Ekskul</th>
+            <th>Hari Latihan</th>
+            <th>Ruangan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Web Design & Programming</td>
+            <td>Rabu</td>
+            <td>Lab RPL 1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Robotik & IoT</td>
+            <td>Jumat</td>
+            <td>Lab Workshop</td>
+        </tr>
+    </table>
+
+    <br><hr><br>
+
+    <h2>Formulir Pendaftaran Anggota Baru</h2>
+    <form>
+        <p>
+            <label>Nama Lengkap:</label><br>
+            <input type="text" placeholder="Masukkan nama lengkapmu..." required>
+        </p>
+        <p>
+            <label>Pilihan Ekskul:</label><br>
+            <select required>
+                <option disabled selected>Pilih Eskul di bawah ini</option>
+                <option>Web Design & Programming</option>
+                <option>Robotik & IoT</option>
+            </select>
+        </p>
+        <p>
+            <label>Alasan Bergabung:</label><br>
+            <textarea rows="3" placeholder="Tuliskan alasanmu bergabung..."></textarea>
+        </p>
+        <button type="submit">Daftar Sekarang</button>
+    </form>
+
+</body>
+</html>
